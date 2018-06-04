@@ -1,14 +1,17 @@
 
 function getGiffy(){
     let key = $("input").val();
-    let giffyAddress = "http://api.giphy.com/v1/gifs/search?q=random&api_key=";
-    var xhr = $.get(giffyAddress +  key + "&limit=9");
+    let giffyAddress = "http://api.giphy.com/v1/gifs/search?q=trending&api_key=";
+// https://api.giphy.com/v1/gifs/search?q=random&api_key=eUE4x88RaPqfRC2AN3ryVBIeZu4cr24F
+    var xhr = $.get(giffyAddress +  key + "&limit=50");
     xhr.done(function(data) { outputImgSrc(data); });
 }
 
 function outputImgSrc(data){
-    let id = data.data[0].id;
-    let imgSrc = `<img src="https://media.giphy.com/media/${id}/giphy.gif">`
+    console.log(data);
+    let randomiser = Math.floor(Math.random() * 50)
+    let id = data.data[randomiser].id;
+    let imgSrc = `<img src="https://media.giphy.com/media/${id}/giphy.gif" width="500">`
     $("section").append($(imgSrc))
 }
 
