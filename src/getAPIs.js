@@ -19,7 +19,11 @@ async function getRandomWord(){
   await fetch(url)
     .then(response => response.json())
     .then(data => randomWord = data.word)
+    .then(word => outputWord(word))
     .catch(err => console.log(err));
-    console.log(randomWord);
-    return randomWord;
+  return randomWord;
+}
+
+function outputWord(query) {
+  $("section").append($(`<p>${query}</p>`))
 }
