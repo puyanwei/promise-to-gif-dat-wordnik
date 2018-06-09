@@ -1,8 +1,6 @@
-
 function getGiffy(){
-    const gifKey = $("input:nth(1)").val();
-    const query = $("input:nth(0)").val();
-    const url = `http://api.giphy.com/v1/gifs/search?q=random+${query}&api_key=${gifKey}`;
+    const query = $("input:nth(0)").val(); //wordnikAPI
+    const url = `http://api.giphy.com/v1/gifs/search?q=random+${query}&api_key=${giffyAPI}`;
     const xhr = $.get(url + "&limit=50");
     xhr.done(function(data) { outputImgSrc(data); });
 }
