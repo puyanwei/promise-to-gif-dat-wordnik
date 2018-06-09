@@ -2,7 +2,7 @@
 
 I wanna get better with using promises and async, so I'm doing this project to grab data from APIs and send that to the giffy API to get back a result.
 
-![screen shot 2018-06-09 at 19 13 16](https://user-images.githubusercontent.com/14803518/41194803-4cb6281a-6c19-11e8-9cd9-032afcbc16bb.png)
+![d210c922919de7c48f2f91ce396c8bf7](https://user-images.githubusercontent.com/14803518/41194925-9ae19f68-6c1b-11e8-81a2-8ddfdd9347e2.gif)
 
 ### Tech Stack
 
@@ -11,7 +11,28 @@ I wanna get better with using promises and async, so I'm doing this project to g
 - Jquery
 - Wordnik and Giffy API
 
-### Steps
+### Installation
+
+```
+git clone git@github.com:puyanwei/promise-to-gif-dat-wordnik.git
+cd promise-to-gif-dat-wordnik
+```
+
+You must have a [wordnik](https://developer.wordnik.com/) and [giffy](https://developers.giphy.com/) API key by signing up. Once you have them create a new file in the src folder called api-keys.js.
+Inside this file write the following;
+
+```
+const wordnikAPI = "[YOUR_WORDNIK_API_KEY]"
+const giffyAPI = "[YOUR_GIFFY_API_KEY]"
+```
+
+Save the file. This file will be hidden via the .gitignore file.
+
+```
+open index.html
+```
+
+### My Process Steps
 
 1.  Grab Wordnik API, load it into console.
 2.  Create super basic interface.
