@@ -2,11 +2,13 @@
 
 I wanna get better with using promises and async, so I'm doing this project to grab data from APIs and send that to the giffy API to get back a result.
 
+![screen shot 2018-06-09 at 19 13 16](https://user-images.githubusercontent.com/14803518/41194803-4cb6281a-6c19-11e8-9cd9-032afcbc16bb.png)
+
 ### Tech Stack
 
 - Javascript
 - HTML
-- Jasmine Testing
+- Jquery
 - Wordnik and Giffy API
 
 ### Steps
